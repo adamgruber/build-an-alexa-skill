@@ -1,0 +1,13 @@
+.fullscreen {
+  max-height: initial !important;
+  max-width: initial !important;
+}
+
+.code-slide pre {
+  margin: 0 -200px !important;
+}
+
+/* Presenter Notes Hack */
+.css-1c94gjj {
+  white-space: pre-line;
+}

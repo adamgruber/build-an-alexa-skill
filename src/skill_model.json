@@ -1,0 +1,34 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "commander aj",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetAwesomeFactIntent",
+          "samples": [
+            "a fact",
+            "an aweber fact",
+            "an awesome fact",
+            "tell me a fact",
+            "tell me an aweber fact",
+            "give me a fact",
+            "give me an aweber fact"
+          ],
+          "slots": []
+        }
+      ]
+    }
+  }
+}
