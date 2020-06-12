@@ -3,6 +3,42 @@
 - has anyone here ever thought about making their own skill?
 - anyone done it?
 
+----------------------
+----------------------
+  WHY BUILD A SKILL
+----------------------
+----------------------
+
+- Humans have always wanted to talk to machines
+- IBM Shoebox (1961), recognized 16 words, did simple arithmetic
+- Hasn't always worked out in the movies, tech today is better than ever
+- Tools available make it super easy to do
+
+----------------------
+----------------------
+  WHAT SKILLS CAN WE BUILD
+----------------------
+----------------------
+
+- control lights and appliances
+- fun facts, choose your own adventure, trivia
+- educational references, learning apps
+- skills that control music or video playback
+- connect customers with your brand or product
+
+- and fart skills
+
+----------------------
+----------------------
+  WHAT TOOLS DO WE USE
+----------------------
+----------------------
+
+- blueprints (fill in the blanks)
+- ask sdk (this demo)
+- wysiwyg editor (storyline)
+
+
 - we'll go through steps to create simple skill
 - provide basic understanding
 
@@ -51,15 +87,7 @@
 
 ----------------------
 ----------------------
-  WRITING THE CODE
-----------------------
-----------------------
-
-- do the thing
-
-----------------------
-----------------------
-  THOUGHTS ABOUT TESTING
+  TESTING THE SKILL
 ----------------------
 ----------------------
 
@@ -79,11 +107,8 @@
 
 ----------------------
 ----------------------
-  TESTING END TO END
+  WRITING THE CODE
 ----------------------
 ----------------------
 
-- open tunnel
-- define endpoint in console
-- start dev server
-- test skill
+- do the thing

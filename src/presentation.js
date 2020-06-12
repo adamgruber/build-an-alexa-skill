@@ -10,6 +10,7 @@ import {
   ListItem,
   Slide,
   Text,
+  Layout,
 } from 'spectacle';
 
 // Import theme
@@ -27,6 +28,18 @@ import {
   testDiagram2,
   twitter,
   vuiDiagram,
+  helloComputer,
+  helloDave,
+  shoebox,
+  forAFart,
+  buttonTooter,
+  fartDetective,
+  fartMachine,
+  fartTopia,
+  startFarting,
+  fartSounds,
+  youFart,
+  fart,
 } from './images';
 
 import {
@@ -86,12 +99,70 @@ export default class Presentation extends React.Component {
           <Heading margin="25vh 0 0 0" size={1} fit textColor="quarternary">
             How to Build an Alexa Skill
           </Heading>
-          <Text margin="10px 0 0" textColor="secondary" size={1} bold>
-            (in about 20 minutes)
-          </Text>
+        </Slide>
+
+        <Slide bgColor="secondary" textColor="primary" notes={prereqNotes}>
+          <Heading size={2} textColor="primary">
+            Why Build a Voice Skill?
+          </Heading>
+        </Slide>
+
+        <Slide bgColor="secondary" textColor="primary" notes={prereqNotes}>
+          <Image src={shoebox} />
+        </Slide>
+
+        <Slide bgColor="secondary" textColor="primary" notes={prereqNotes}>
+          <Image src={helloComputer} style={{marginBottom:'5rem'}} />
+          <Image src={helloDave} />
+        </Slide>
+
+        <Slide bgColor="secondary" textColor="primary" notes={prereqNotes}>
+          <Heading size={2} margin="-5vh -5vh 10vh -5vh" textColor="primary">
+            What Skills Can We Build?
+          </Heading>
+          <List>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Smart Home</ListItem>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Games and Trivia</ListItem>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">News and Flash Briefing</ListItem>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Educational</ListItem>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Multimedia</ListItem>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Business and Workplace</ListItem>
+          </List>
+        </Slide>
+
+        <Slide bgColor="secondary" textColor="primary" notes={prereqNotes}>
+          <Layout style={{margin: '-10vh 0 8vh'}}>
+              <Image src={forAFart} />
+              <Image src={fart} />
+              <Image src={buttonTooter} />
+          </Layout>
+          <Layout style={{marginBottom: '8vh'}}>
+              <Image src={fartMachine} />
+              <Image src={fartDetective} />
+              <Image src={startFarting} />
+          </Layout>
+          <Layout>
+              <Image src={fartTopia} />
+              <Image src={fartSounds} />
+              <Image src={youFart} />
+          </Layout>
+        </Slide>
+
+        <Slide bgColor="secondary" textColor="primary" notes={prereqNotes}>
+          <Heading size={2} margin="-5vh -5vh 10vh -5vh" textColor="primary">
+            What Tools Do We Use?
+          </Heading>
+          <List>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Alexa Skill Blueprints</ListItem>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Alexa Skills Kit SDK</ListItem>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">WYSIWYG Editor</ListItem>
+          </List>
         </Slide>
 
         <Slide bgColor="quarternary" notes={introNotes}>
+          <Heading size={2} margin="-5vh -5vh 10vh -5vh" textColor="primary">
+            AWeber AWesome Facts
+          </Heading>
           <Image src={skillScreenshot} style={{boxShadow}}/>
         </Slide>
 
@@ -139,6 +210,35 @@ export default class Presentation extends React.Component {
 
         {
           /**
+           * TESTING
+           */
+        }
+
+        <Slide bgColor="secondary" textColor="primary" notes={tunnelNotes}>
+          <Heading size={2} margin="-5vh 0 10vh 0" textColor="primary">
+            Testing the Skill
+          </Heading>
+          <List>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Mock requests?</ListItem>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Upload to Lambda?</ListItem>
+            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Local server?</ListItem>
+          </List>
+        </Slide>
+
+        <Slide bgColor="#ccc" className="fullscreen" transition={['slide']} notes={testIntroNotes}>
+          <Image src={alexaRequestJson} style={{maxWidth: '40%'}} />
+        </Slide>
+
+        <Slide transition={['fade']} bgImage={room} bgDarken={0.3} notes={testIntroNotes}>
+          <Image src={testDiagram1} />
+        </Slide>
+
+        <Slide transition={['fade']} bgImage={room} bgDarken={0.3} notes={testIntroNotes}>
+          <Image src={testDiagram2} />
+        </Slide>
+
+        {
+          /**
            * BEGIN CODING SECTION
            */
         }
@@ -154,35 +254,6 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        {
-          /**
-           * TESTING
-           */
-        }
-
-        <Slide bgColor="#ccc" className="fullscreen" transition={['slide']} notes={testIntroNotes}>
-          <Image src={alexaRequestJson} style={{maxWidth: '40%'}} />
-        </Slide>
-
-        <Slide transition={['fade']} bgImage={room} bgDarken={0.3} notes={testIntroNotes}>
-          <Image src={testDiagram1} />
-        </Slide>
-
-        <Slide transition={['fade']} bgImage={room} bgDarken={0.3} notes={testIntroNotes}>
-          <Image src={testDiagram2} />
-        </Slide>
-
-        <Slide bgColor="secondary" textColor="primary" notes={tunnelNotes}>
-          <Heading size={2} margin="-5vh 0 10vh 0" textColor="primary">
-            Testing End-to-End
-          </Heading>
-          <List>
-            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Open a Tunnel</ListItem>
-            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Define the Endpoint</ListItem>
-            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Start the Development Server</ListItem>
-            <ListItem textSize="3.2rem" margin="0 0 1.5rem 0">Test the Skill</ListItem>
-          </List>
-        </Slide>
 
         {
           /**
